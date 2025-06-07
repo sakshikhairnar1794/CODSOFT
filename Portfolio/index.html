@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sakshi Khairnar | Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- Header -->
+<div id="header">
+  <div class="container">
+    <nav>
+      <h2 class="">Sakshi Khairnar</h2>
+      <ul id="sidemenu">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fas fa-times" onclick="closemenu()"></i>
+      </ul>
+      <i class="fas fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+      <p>Computer Engineering Student</p>
+      <h1>Hi I'm <span>Sakshi Khairnar</span><br>from Pune, India</h1>
+    </div>
+  </div>
+</div>
+
+<!-- About -->
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="abc.jpg"/>
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>I'm a second-year Computer Engineering student at PCCOE Pune with a keen interest in programming and web development. I'm continuously improving my DSA skills, exploring R programming, and contributing to tech events and research projects like Smart India Hackathon. I believe in lifelong learning and adapting to challenges.</p>
+
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+          <p class="tab-links" onclick="opentab('experience')">Experience</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+        </div>
+        <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>Languages</span><br>Python (Basic), C++ (Basic to Advanced)</li>
+            <li><span>Web Development</span><br>Frontend with HTML, CSS, JavaScript</li>
+            <li><span>Data Skills</span><br>Learning R Programming and Statistical Data Analysis</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="experience">
+          <ul>
+            <li><span>Event Management</span><br>Managed multiple events in school and college</li>
+            <li><span>Team Member</span><br>Working in ACM design team and assisting in web development</li>
+            <li><span>Hackathon</span><br>Part of R&D team in Smart India Hackathon</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>B.Tech (Pursuing)</span><br>Pimpri Chinchwad College of Engineering, Pune</li>
+            <li><span>Junior College</span><br>Topper in 2023 (12th Std)</li>
+            <li><span>School</span><br>Topper in 2021 (10th Std)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Services -->
+<div id="services">
+  <div class="container">
+    <h1 class="sub-title">My Services</h1>
+    <div class="services-list">
+      <div>
+        <i class="fa-solid fa-code"></i>
+        <h2>Web Development</h2>
+        <p>Frontend development using HTML, CSS, and JavaScript.</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-magnifying-glass-chart"></i>
+        <h2>Data Analysis (Learning)</h2>
+        <p>Currently learning R Programming and Statistical Data Analysis.</p>
+      </div>
+      <div>
+        <i class="fa-solid fa-lightbulb"></i>
+        <h2>Team & Event Management</h2>
+        <p>Led multiple school events and supported college tech initiatives.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My Work</h1>
+    <div class="work-list">
+      <div class="work">
+        <img src="3.jpg"/>
+        <div class="layer">
+          <h3>Donation App</h3>
+          <p>Copyrighted project — helps streamline donations via Android app.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="4.jpg"/>
+        <div class="layer">
+          <h3>Smart India Hackathon</h3>
+          <p>Contributing to research and development team in national-level hackathon.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+      <div class="work">
+        <img src="5.png"/>
+        <div class="layer">
+          <h3>CS50 Projects</h3>
+          <p>Working on R Programming certificate and real-world coding exercises.</p>
+          <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+<!-- Contact -->
+<div id="contact">
+  <div class="container">
+    <div class="contact-left">
+      <h1 class="sub-title">Contact Me</h1>
+      <p><i class="fas fa-paper-plane"></i> sakshi.khairnar23@pccoepune.org</p>
+      <p><i class="fa-solid fa-phone"></i> 9922870020</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/sakshikhairnar1794" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+      <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+    </div>
+    <div class="contact-right">
+      <form name="submit-to-google-sheet">
+        <input type="text" name="Name" placeholder="Your Name" required>
+        <input type="email" name="Email" placeholder="Your Email" required>
+        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+        <button type="submit" class="btn btn2">Submit</button>
+      </form>
+      <span id="msg"></span>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>© Sakshi Khairnar</p>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname){
+    for(tablink of tablinks){
+      tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+      tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+</script>
+
+<script>
+  var sidemenu = document.getElementById("sidemenu");
+
+  function openmenu(){
+    sidemenu.style.right = "0";
+  }
+  function closemenu(){
+    sidemenu.style.right = "-200px";
+  }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwSccyyCnlc7G8c7SU-i7LqiozvOZhFJySFuBKflD4M5OjEiMHMNbukSlghkbZmxFE_/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully";
+        setTimeout(() => msg.innerHTML = "", 5000);
+        form.reset();
+      })
+      .catch(error => console.error('Error!', error.message));
+  });
+</script>
+
+</body>
+</html>
