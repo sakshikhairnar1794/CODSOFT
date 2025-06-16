@@ -1,15 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-:root {
-  --primary-color: #ba2983;
-  --primary-color-dark: #ba2983;
-  --text-dark: #333333;
-  --text-light: #767268;
-  --white: #ffffff;
-  --max-width: 1200px;
-  --header-font: "Bebas Neue", sans-serif;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -43,19 +33,19 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--primary-color);
+  background-color: #ba2983;
 }
 
 .nav__logo a {
   font-size: 1.75rem;
   font-weight: 400;
-  font-family: var(--header-font);
-  color: var(--white);
+  font-family: "Bebas Neue", sans-serif;
+  color: #ffffff;
 }
 
 .nav__menu__btn {
   font-size: 1.5rem;
-  color: var(--white);
+  color: #ffffff;
   cursor: pointer;
 }
 
@@ -71,7 +61,7 @@ nav {
   justify-content: center;
   flex-direction: column;
   gap: 2rem;
-  background-color: var(--primary-color);
+  background-color: #ba2983;
   transition: 0.5s;
   z-index: -1;
   transform: translateY(-100%);
@@ -83,11 +73,11 @@ nav {
 
 .nav__links a {
   font-weight: 500;
-  color: var(--white);
+  color: #ffffff;
 }
 
 .nav__links a:hover {
-  color: var(--text-dark);
+  color: #333333;
 }
 
 .nav__btns {
@@ -95,7 +85,7 @@ nav {
 }
 
 .header__container {
-  max-width: var(--max-width);
+  max-width: 1200px;
   margin: auto;
   padding-block: 8rem 2rem;
   padding-inline: 1rem;
@@ -140,8 +130,8 @@ nav {
   gap: 10px;
   font-size: 1.1rem;
   font-weight: 500;
-  color: var(--text-dark);
-  background-color: var(--white);
+  color: #333333;
+  background-color: #ffffff;
   white-space: nowrap;
   border-radius: 5px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
@@ -151,7 +141,7 @@ nav {
 .header__image__card span {
   font-size: 1.5rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: #ba2983;
 }
 
 .header__image__card-1 {
@@ -182,19 +172,19 @@ nav {
   margin-bottom: 1rem;
   font-size: 5rem;
   font-weight: 400;
-  font-family: var(--header-font);
-  color: var(--text-dark);
+  font-family: "Bebas Neue", sans-serif;
+  color: #333333;
   line-height: 5.5rem;
   text-align: center;
 }
 
 .header__content h1 span {
-  color: var(--primary-color);
+  color: #ba2983;
 }
 
 .header__content p {
   margin-bottom: 2rem;
-  columns: var(--text-light);
+  color: #767268;
   line-height: 1.75rem;
   text-align: center;
 }
@@ -227,7 +217,7 @@ nav {
   margin-bottom: 5px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--text-light);
+  color: #767268;
 }
 
 .header__content .input__group > div {
@@ -246,13 +236,13 @@ nav {
 
 .header__content input::placeholder {
   font-weight: 600;
-  color: var(--text-dark);
+  color: #333333;
 }
 
 .header__content .input__group span {
   font-size: 1.1rem;
   font-weight: 600;
-  color: var(--primary-color);
+  color: #ba2983;
 }
 
 .header__content button {
@@ -262,20 +252,20 @@ nav {
   border: none;
   font-size: 1rem;
   white-space: nowrap;
-  color: var(--white);
-  background-color: var(--primary-color);
+  color: #ffffff;
+  background-color: #ba2983;
   border-radius: 10px;
   transition: 0.3s;
   cursor: pointer;
 }
 
 .header__content button:hover {
-  background-color: var(--primary-color-dark);
+  background-color: #ba2983;
 }
 
 .header__content .bar {
   font-size: 0.9rem;
-  color: var(--text-light);
+  color: #767268;
   text-align: center;
 }
 
@@ -284,7 +274,7 @@ nav {
     position: static;
     padding-block: 2rem 0;
     padding-inline: 1rem;
-    max-width: var(--max-width);
+    max-width: 1200px;
     margin-inline: auto;
     display: flex;
     align-items: center;
@@ -299,11 +289,11 @@ nav {
   }
 
   .nav__logo a {
-    color: var(--text-dark);
+    color: #333333;
   }
 
   .nav__logo a span {
-    color: var(--primary-color);
+    color: #ba2983;
   }
 
   .nav__menu__btn {
@@ -320,12 +310,12 @@ nav {
 
   .nav__links a {
     padding-block: 5px;
-    color: var(--text-dark);
+    color: #333333;
     border-bottom: 4px solid transparent;
   }
 
   .nav__links a:hover {
-    border-color: var(--primary-color);
+    border-color: #ba2983;
   }
 
   .nav__btns {
@@ -345,21 +335,21 @@ nav {
   }
 
   .sign__up {
-    color: var(--text-dark);
+    color: #333333;
     background-color: transparent;
   }
 
   .sign__up:hover {
-    color: var(--primary-color);
+    color: #ba2983;
   }
 
   .sign__in {
-    color: var(--white);
-    background-color: var(--primary-color);
+    color: #ffffff;
+    background-color: #ba2983;
   }
 
   .sign__in:hover {
-    background-color: var(--primary-color-dark);
+    background-color: #ba2983;
   }
 
   .header__container {
